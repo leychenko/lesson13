@@ -1,0 +1,300 @@
+/* &display=swap */
+@import url(https://fonts.googleapis.com/css?family=Amiri+Quran:regular);
+
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+body{
+	font-family:'Amiri Quran';
+	font-size: 28px;
+	color: rgb(103, 100, 100);
+	background: url(../image/fon.jpg) no-repeat;
+	background-size: cover;
+}
+.avto {
+	position: relative;
+	top: 150px;
+	animation: avto 13s linear forwards;
+ }
+.avto-body { 
+	position: absolute;
+	top: 500px;
+	left: 150px;
+}
+.avto-body__baza{
+	width: 650px;
+	height: 90px;
+	background-color: rgb(67, 75, 46);
+	border-radius: 0% 0% 4% 4% / 3% 0% 36% 37% ;
+
+}
+.avto-bamper{
+	width: 40px;
+	height: 25px;
+	background-color: rgb(61, 48, 48);
+	transform: translate(618px,49px);
+	border-radius:0% 0% 14% 0% / 3% 0% 84% 47% ;
+}
+.avto-bamper2{
+	width: 350px;
+	height: 40px;
+	background-color: rgb(88, 85, 85);
+	border-radius: 0% 0% 0% 4% / 3% 0% 84% 53% ;
+	transform: translate(0px,25px);
+}
+.avto-box{
+	width: 130px;
+	height: 70px;
+	background-color: rgb(67, 75, 46);
+	box-shadow: -1px 0px 8px 1px ;
+	border-radius: 9% 9% 0% 0% / 27% 27% 0% 0% ;
+	transform: translate(350px,-45px);
+}
+.avto-box::before{
+	content:'';
+	width: 10px;
+	height: 70px;
+	background-color:rgb(62, 65, 59);
+	position: absolute;
+	left: 25px;
+}
+.avto-box::after{
+	content:'';
+	width: 10px;
+	height: 70px;
+	background-color:rgb(62, 65, 59);
+	position: absolute;
+	left: 95px;
+}
+.avto-box2{
+	width: 75px;
+	height: 110px;
+	background: rgb(67, 75, 46);
+	border: 1px solid;
+	position: absolute;
+	top: -110px;
+	left: 367px;
+}
+.avto-box2::before{
+	content: '';
+	width: 69px;
+	height: 104px;
+	border: 1px solid;
+	position: absolute;
+	transform: translate(2px,2px);
+}
+.avto-box2::after{
+	content: '';
+	width: 14px;
+	height: 4px;
+	background-color: black;
+	position: absolute;
+	transform: translate(10px,55px);
+}
+.avto-body__modul{
+	width: 200px;
+	height: 70px;
+	background-color:rgb(67, 75, 46);
+	position: absolute;
+	transform: skewY();
+	top: 430px;
+	left: 600px;
+}
+.avto-body__modul2{
+	width: 200px;
+	height: 90px;
+	border-radius: 3px;
+	box-shadow: 0 5px 6px -5px black;
+	background-color:rgb(67, 75, 46);
+	transform: skew(12deg);
+	position: absolute;
+	top: 340px;
+	left: 591px;
+}
+.avto-body__gun{
+	width: 330px;
+	height: 110px;
+	border: 1px solid;
+	border-radius: 2px 0 3px 5px;
+	background-color: rgb(67, 75, 46);
+	position: relative;
+	z-index: 5;
+	top: -230px;
+	animation: gun 7s linear 4s;
+	transform-origin: bottom left;
+}
+
+.avto-body__gun_item{
+	width: 95px;
+	height: 25px;
+	background-color: rgb(67, 75, 46);
+	border: 1px solid;
+	border-radius:0 3px 5px 0 ;
+	position: relative;
+	top: -80px;
+	left: 328px;
+}
+.avto-body__gun_rocket,
+.avto-body__gun_rocket-two{
+	width: 320px;
+	height: 30px;
+	background-color: rgb(73, 59, 47);
+	border-radius: 10% 41% 42% 0% / 0% 53% 41% 0% ;
+	position: relative;
+	top: -75px;
+	opacity: 0;
+	animation:rocket 0.6s linear 7s forwards;
+}
+.avto-body__gun_rocket-two{
+	animation:rocket 1s linear 7.5s forwards;
+}
+.text{
+	color: blanchedalmond;
+	text-align: center;
+	padding: 30px 0 0 0;
+	font-size: 50px;
+}
+.avto-deteil{
+	width: 155px;
+	height: 20px;
+	background-color: rgb(62, 65, 59);
+	position: relative;
+	z-index: 1;
+	top: -220px;
+	left: 35px;
+}
+.avto-deteil2{
+	width: 15px;
+	height: 115px;
+	background-color: rgb(62, 65, 59);
+	position: relative;
+	top: -340px;
+	left: 100px;
+	transform: rotate(-30deg);
+}
+.avto-weehl{
+	width: 130px;
+	height: 130px;
+	background:url(../image/wheel.png)center/130px no-repeat;
+	position: absolute;
+	top: 520px;
+	left: 640px;
+	animation: weehl 4s linear forwards,
+					weehl 2.5s linear 10.3s forwards
+}
+.avto-weehl_rear-first{
+	background:url(../image/wheel.png) center /130px no-repeat;
+	position: absolute;
+	top: 520px;
+	left: 300px;
+}
+.avto-weehl_rear-second{
+	background:url(../image/wheel.png)center/130px no-repeat;
+	position: absolute;
+	top: 520px;
+	left: 170px;
+}
+@keyframes weehl{
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes avto{
+	0% {
+		transform: translate(-50%);
+	 }
+	 30% {
+		transform: translate(0);
+	 }
+	 80% {
+		transform: translate(0);
+	 }
+	 100% {
+		transform: translate(120%);
+	 }
+  }
+@keyframes rocket{
+	0%{
+		transform: translate(0);
+	}
+	60%{
+		transform: translate(120%);
+		opacity: 1;
+		overflow: hidden;
+	}
+	100%{
+		transform: translate(600%);
+		opacity: 1;
+	}
+}
+@keyframes gun{
+	0%{
+		transform: rotate(0);
+	}
+	50%{
+		transform: rotate(-28deg);
+	}
+	60%{
+		transform: rotate(-28deg);
+	}
+	100%{
+		transform: rotate(0);
+	}
+}
+.avto-door { 
+	width: 80px;
+	height: 150px;
+	background-color:rgb(67, 75, 46) ;
+	border: 1px solid;
+	position: absolute;
+	border-radius: 5px;
+	opacity: 0.3;
+	top: 365px;
+	left: 660px;
+	transform: skew(9deg);
+}
+.avto-door::before{
+	content: '';
+	width: 40px;
+	height: 35px;
+	background-color: rgb(105, 191, 231);
+	position: absolute;
+	top: 20px;
+	left: 22px;
+}
+
+.slava {
+	max-width: 300px;
+	background:white;
+	border-radius: 39% 10% 30% 0% / 25% 12% 25% 0% ;
+	position: relative;
+	top: 10px;
+	left: 1100px;
+	transform: scale(0);
+	animation: slava 4s ease 12s forwards;
+ }
+.slava__text{
+	text-align: center;
+	margin-bottom: 25px;
+	padding-top: 20px;
+ }
+ .slava__image img{
+	max-width: 100%;
+	border-radius: 39% 10% 30% 0% / 25% 12% 30% 0%;
+	opacity: 0.7;
+ }
+
+@keyframes slava {
+	0%{
+		transform: scale(0);
+	}
+	100%{
+		transform: scale(1) rotate(360deg);
+	}
+}
