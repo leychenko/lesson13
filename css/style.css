@@ -98,7 +98,6 @@ body{
 	height: 70px;
 	background-color:rgb(67, 75, 46);
 	position: absolute;
-	transform: skewY();
 	top: 430px;
 	left: 600px;
 }
